@@ -161,8 +161,8 @@ const Header: React.FC<PropsHeader> = ({ theme = 'light' }) => {
                 )}
               </li>
               <li css={[stylesLiHeader, tw`lg:mr-[42px]`]}>
-                <Link
-                  to="/about"
+                <a
+                  href="/about"
                   css={[
                     stylesLinkHeader,
                     theme === 'dark'
@@ -171,7 +171,7 @@ const Header: React.FC<PropsHeader> = ({ theme = 'light' }) => {
                   ]}
                 >
                   About
-                </Link>
+                </a>
               </li>
               <li css={[stylesLiHeader, tw`lg:mr-[45px]`]}>
                 <NavLink
