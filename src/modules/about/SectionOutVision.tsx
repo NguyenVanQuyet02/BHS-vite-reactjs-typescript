@@ -14,7 +14,7 @@ const SectionOutVision = () => {
       <section tw="flex w-full justify-center gap-x-[20.6%] md:flex-col-reverse md:items-center md:justify-center sm:flex-col-reverse sm:items-center">
         <img
           tw="m-0 w-[33.3%] h-auto object-contain shrink-0 rounded-[50px] shadow-sdimg md:w-[60%] lg:ml-[30px] md:h-fit sm:m-0 sm:w-[60%] sm:h-auto"
-          src="public/assets/imgs/about/img_vision.png"
+          src="/assets/imgs/about/img_vision.png"
           alt="img about"
         />
         <BlockTextSection tw="m-0 w-[40%] text-left md:w-full md:my-9 sm:w-full sm:mb-[30px] sm:text-center shrink-0">

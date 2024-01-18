@@ -14,14 +14,14 @@ const ServicePage = () => {
       <SectionBeautyConsultation
         stylesContainer={tw`mt-0`}
         stylesSection={tw`flex-row-reverse justify-between`}
-        img="public/assets/imgs/service/img_skin_treatements.png"
+        img="/assets/imgs/service/img_skin_treatements.png"
         category="Skin Treatements"
         label="Skin care and treatment by expert"
       />
       {/* Section Beauty Product */}
       <SectionBeautyConsultation
         stylesContainer={tw`mt-0`}
-        img="public/assets/imgs/service/img_beauty_product.png"
+        img="/assets/imgs/service/img_beauty_product.png"
         category="Beauty Product"
         label="We present quality beauty products"
       />

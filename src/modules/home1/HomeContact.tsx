@@ -62,11 +62,11 @@ const HomeContact = () => {
 
   return (
     <div tw="relative">
-      <div tw="w-[82%] h-[929px] shrink-0 absolute z-[-10] left-0 top-[-24%] bg-no-repeat bg-contain bg-[url('public/assets/imgs/home1/background_contact.png')]" />
+      <div tw="w-[82%] h-[929px] shrink-0 absolute z-[-10] left-0 top-[-24%] bg-no-repeat bg-contain bg-[url('/assets/imgs/home1/background_contact.png')]" />
       <Container tw="mb-[68.66px] md:mb-0 sm:mb-0">
         <div tw="w-full min-h-[200px] flex justify-center md:flex-wrap-reverse md:text-center sm:flex-wrap-reverse sm:text-center">
           <img
-            src="public/assets/imgs/home1/contact_animations.png"
+            src="/assets/imgs/home1/contact_animations.png"
             alt="animations contact"
             tw="w-[45.7%] h-auto object-contain shrink-0 mt-[68px] md:w-[60%] md:m-0 sm:w-[70%] sm:m-0"
           />

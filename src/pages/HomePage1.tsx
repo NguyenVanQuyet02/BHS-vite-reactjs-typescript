@@ -11,7 +11,7 @@ const HomePage1 = () => {
   return (
     <Layout>
       <HomeSlider
-        img="public/assets/imgs/home1/frame1.png"
+        img="/assets/imgs/home1/frame1.png"
         title="Clinic &amp; beauty consultant"
         description="It is a long established fact that a reader will be by the readable
             content of a page."

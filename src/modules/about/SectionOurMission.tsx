@@ -30,7 +30,7 @@ const SectionOurMission = () => {
         </BlockTextSection>
         <img
           tw="m-0 w-[37.3%] h-auto object-contain shrink-0 rounded-[50px] shadow-sdimg md:w-[60%] md:h-fit sm:m-0 sm:w-[60%] sm:h-auto"
-          src="public/assets/imgs/about/img_mission.png"
+          src="/assets/imgs/about/img_mission.png"
           alt="img about"
         />
       </section>

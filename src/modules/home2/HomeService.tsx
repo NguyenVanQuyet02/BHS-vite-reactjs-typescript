@@ -12,19 +12,19 @@ import { CardItem, CardList } from '../../components/cards'
 const listCardService: ICard[] = [
   {
     index: 1,
-    img: 'public/assets/imgs/home2/icon_service_1.png',
+    img: '/assets/imgs/home2/icon_service_1.png',
     title: 'Beauty consultation',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
   },
   {
     index: 2,
-    img: 'public/assets/imgs/home2/icon_service_2.png',
+    img: '/assets/imgs/home2/icon_service_2.png',
     title: 'Skin treatments',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
   },
   {
     index: 3,
-    img: 'public/assets/imgs/home2/icon_service_3.png',
+    img: '/assets/imgs/home2/icon_service_3.png',
     title: 'Beauty product',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
   },

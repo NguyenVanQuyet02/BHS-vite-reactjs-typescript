@@ -5,7 +5,7 @@ import { Button, Container } from '../../components'
 const HomeSlider = () => {
   return (
     <div>
-      <div tw="w-full h-[918px] sm:h-[800px] shrink-0 absolute z-[-10] left-0 top-0 bg-top bg-no-repeat bg-cover bg-[url('public/assets/imgs/home2/bg-slider.png')]" />
+      <div tw="w-full h-[918px] sm:h-[800px] shrink-0 absolute z-[-10] left-0 top-0 bg-top bg-no-repeat bg-cover bg-[url('/assets/imgs/home2/bg-slider.png')]" />
       <Container tw="mt-[204px] lg:mb-[472px] md:mt-40 md:mb-[200px] sm:mt-[150px] sm:mb-[120px]">
         <section tw="w-full flex justify-start gap-x-[17.5%] md_max:gap-x-[6%] lg:mb-0 md:flex-col-reverse md:items-center md:gap-y-6 sm:flex-col-reverse sm:items-center sm:gap-y-8">
           <div tw="w-[44%] md_max:w-[60%] h-auto m-0 shrink-0 font-normal md:!w-full md:text-center sm:!w-full sm:m-0 sm:text-center">

@@ -21,27 +21,27 @@ const SectionOurClients = () => {
       <div tw="flex gap-x-[5%] gap-y-6 items-center justify-center flex-wrap">
         <img
           tw="w-[147px] h-auto"
-          src="public/assets/imgs/about/our_client_logo1.png"
+          src="/assets/imgs/about/our_client_logo1.png"
           alt="logo 1"
         />
         <img
           tw="w-[147px] h-auto"
-          src="public/assets/imgs/about/our_client_logo2.png"
+          src="/assets/imgs/about/our_client_logo2.png"
           alt="logo 1"
         />
         <img
           tw="w-[147px] h-auto"
-          src="public/assets/imgs/about/our_client_logo3.png"
+          src="/assets/imgs/about/our_client_logo3.png"
           alt="logo 1"
         />
         <img
           tw="w-[147px] h-auto"
-          src="public/assets/imgs/about/our_client_logo4.png"
+          src="/assets/imgs/about/our_client_logo4.png"
           alt="logo 1"
         />
         <img
           tw="w-[147px] h-auto"
-          src="public/assets/imgs/about/our_client_logo5.png"
+          src="/assets/imgs/about/our_client_logo5.png"
           alt="logo 1"
         />
       </div>

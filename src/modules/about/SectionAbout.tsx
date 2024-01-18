@@ -11,7 +11,7 @@ import {
 const SectionAbout = () => {
   return (
     <div tw="relative">
-      <div tw="w-[1149.104px] h-[1533.5px] shrink-0 absolute z-[-10] right-0 top-[51.4%] md:top-[50%] sm:top-[50%] bg-no-repeat bg-contain bg-[url('public/assets/imgs/about/bg_about.png')]" />
+      <div tw="w-[1149.104px] h-[1533.5px] shrink-0 absolute z-[-10] right-0 top-[51.4%] md:top-[50%] sm:top-[50%] bg-no-repeat bg-contain bg-[url('/assets/imgs/about/bg_about.png')]" />
       <Container tw="mt-[125px] mb-[136px] md:mb-20 sm:mb-10">
         <BlockTextSection tw="text-left lg:w-[66%] mx-0 md_max:text-center mb-[66px] md:mb-6 sm:mb-5">
           <Category tw="sm:text-center">About</Category>
@@ -26,12 +26,12 @@ const SectionAbout = () => {
         <div tw="relative h-[540px] rounded-[50px] overflow-hidden">
           <img
             tw="object-cover w-full h-full"
-            src="public/assets/imgs/about/img_about.jpg"
+            src="/assets/imgs/about/img_about.jpg"
             alt="img about"
           />
           <img
             tw="w-[88px] h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-            src="public/assets/icons/about/play_button.png"
+            src="/assets/icons/about/play_button.png"
             alt="play button about"
           />
         </div>

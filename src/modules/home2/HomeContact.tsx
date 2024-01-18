@@ -5,7 +5,7 @@ import tw, { css } from 'twin.macro'
 const HomeContact = () => {
   return (
     <div tw="relative">
-      <div tw="absolute bottom-[-120px] left-0 z-[-10] w-full h-[1292.081px] shrink-0 bg-cover bg-no-repeat bg-[url('public/assets/imgs/home2/background_wave.png')]" />
+      <div tw="absolute bottom-[-120px] left-0 z-[-10] w-full h-[1292.081px] shrink-0 bg-cover bg-no-repeat bg-[url('/assets/imgs/home2/background_wave.png')]" />
       <Container tw="mb-[130px] md:mb-20 sm:mb-10 relative">
         <section tw="w-full min-h-[100px] flex justify-between md:flex-col md:flex-wrap md:items-center md:justify-center sm:text-center  sm:items-center sm:justify-center sm:flex-col">
           <div tw="w-[36%] md:w-full md:text-center sm:w-full">
@@ -27,7 +27,7 @@ const HomeContact = () => {
               <button tw="w-[113px] sm:w-[60px] h-full shrink-0 rounded-tr-[25px] rounded-br-[25px] bg-pink flex justify-center items-center">
                 <img
                   tw="sm:w-5"
-                  src="public/assets/icons/home2/phone_volume.png"
+                  src="/assets/icons/home2/phone_volume.png"
                   alt="phone volume icon"
                 />
               </button>

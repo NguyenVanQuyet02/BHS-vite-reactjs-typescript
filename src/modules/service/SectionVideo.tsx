@@ -22,7 +22,7 @@ const SectionVideo = ({
         !button && tw`flex items-center justify-center`,
       ]}
     >
-      <div tw="max-w-full w-full h-full shrink-0 absolute top-0 left-0 z-[-10] bg-cover bg-no-repeat bg-[url('public/assets/imgs/about/bg_business_slogan.png')] " />
+      <div tw="max-w-full w-full h-full shrink-0 absolute top-0 left-0 z-[-10] bg-cover bg-no-repeat bg-[url('/assets/imgs/about/bg_business_slogan.png')] " />
       <div tw="w-full h-full shrink-0 bg-contain absolute z-[-10] top-0 bg-[rgba(9, 17, 86, 0.60)]" />
       <Container tw="w-full">
         <section css={[tw`w-full h-full`, button ? tw`flex` : tw``]}>

@@ -13,7 +13,7 @@ const HomeSlider = ({
 }) => {
   return (
     <div>
-      <div tw="w-[88%] h-[743px] shrink-0 absolute z-[-10] left-0 top-0 max:bg-left bg-top bg-no-repeat bg-contain bg-[url('public/assets/imgs/home1/slide_background.svg')]" />
+      <div tw="w-[88%] h-[743px] shrink-0 absolute z-[-10] left-0 top-0 max:bg-left bg-top bg-no-repeat bg-contain bg-[url('/assets/imgs/home1/slide_background.svg')]" />
       <Container tw="lg:mt-[159px] md_max:mt-[80px] md:mt-[80px] mb-[134px] md:mb-20 sm:mb-10">
         <div tw="w-full mb-[138px] md:mb-20 sm:mb-10">
           <section tw="w-full flex justify-center gap-x-[18px] md:flex-col-reverse md:items-center sm:flex-col-reverse sm:items-center">
@@ -37,7 +37,7 @@ const HomeSlider = ({
         </div>
         <img
           tw="block w-[71px] h-[8.146px] shrink-0 mx-auto"
-          src="public/assets/icons/home1/slide_button.png"
+          src="/assets/icons/home1/slide_button.png"
           alt="slider button"
         />
       </Container>

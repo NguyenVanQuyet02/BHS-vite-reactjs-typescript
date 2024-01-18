@@ -21,8 +21,8 @@ const Logo = ({
       tw="flex items-center justify-center max-w-[258px] h-auto shrink-0 object-contain"
       src={
         theme === 'dark'
-          ? 'public/assets/imgs/common/main_logo_white.png'
-          : 'public/assets/imgs/common/Main_Logo.svg'
+          ? '/assets/imgs/common/main_logo_white.png'
+          : '/assets/imgs/common/Main_Logo.svg'
       }
       alt="logo"
     />

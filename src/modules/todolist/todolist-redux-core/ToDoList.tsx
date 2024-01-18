@@ -38,7 +38,7 @@ const ToDoList: React.FC = () => {
               >
                 <img
                   tw="w-[36px]"
-                  src="public/assets/icons/common/delete-left-svgrepo-com.png"
+                  src="/assets/icons/common/delete-left-svgrepo-com.png"
                   alt="delete task"
                 />
               </button>

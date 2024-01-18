@@ -13,19 +13,19 @@ import { ICard } from '../../interface/interface'
 const listCardBlog: ICard[] = [
   {
     index: 1,
-    img: 'public/assets/imgs/home2/c1.jpg',
+    img: '/assets/imgs/home2/c1.jpg',
     title: 'How much does a consultation cost at our clinic?',
     desc: 'A wonderful serenity has taken possession of my entire soul, like these sweet mornings ...',
   },
   {
     index: 2,
-    img: 'public/assets/imgs/home2/c2.jpg',
+    img: '/assets/imgs/home2/c2.jpg',
     title: "Watch out! don't choose the wrong beauty product",
     desc: 'A wonderful serenity has taken possession of my entire soul, like these sweet mornings ...',
   },
   {
     index: 3,
-    img: 'public/assets/imgs/home2/c3.jpg',
+    img: '/assets/imgs/home2/c3.jpg',
     title: 'About skin care you need to know',
     desc: 'A wonderful serenity has taken possession of my entire soul, like these sweet mornings ...',
   },

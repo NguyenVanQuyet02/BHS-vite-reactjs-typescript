@@ -12,19 +12,19 @@ import tw, { styled } from 'twin.macro'
 const listCardService: ICard[] = [
   {
     index: 1,
-    img: 'public/assets/imgs/home1/animation1.png',
+    img: '/assets/imgs/home1/animation1.png',
     title: 'Beauty consultation',
     desc: 'Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.',
   },
   {
     index: 2,
-    img: 'public/assets/imgs/home1/animation2.png',
+    img: '/assets/imgs/home1/animation2.png',
     title: 'Skin treatments',
     desc: 'Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.',
   },
   {
     index: 3,
-    img: 'public/assets/imgs/home1/animation3.png',
+    img: '/assets/imgs/home1/animation3.png',
     title: 'Beauty product',
     desc: 'Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.',
   },

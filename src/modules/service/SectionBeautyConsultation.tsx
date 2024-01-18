@@ -35,7 +35,7 @@ const SectionBeautyConsultation = ({
       >
         <img
           tw="m-0 w-[42.3%] h-auto object-contain shrink-0 rounded-[50px] shadow-sdimg md:w-[60%] md:h-fit sm:m-0 sm:w-[60%] sm:h-auto"
-          src={img || 'public/assets/imgs/service/img_beauty_consultation.png'}
+          src={img || '/assets/imgs/service/img_beauty_consultation.png'}
           alt="img about"
         />
         <BlockTextSection tw="m-0 mt-[34px] w-[39%] text-left md:w-full md:my-9 sm:w-full sm:mb-[30px] sm:text-center shrink-0">
@@ -53,7 +53,7 @@ const SectionBeautyConsultation = ({
             Make an Appointment
             <img
               tw="w-[25px] h-auto shrink-0 "
-              src="public/assets/icons/service/angle_double_right.png"
+              src="/assets/icons/service/angle_double_right.png"
               alt="angle_double_right"
             />
           </p>

@@ -17,7 +17,7 @@ const Footer = () => {
           <a href="#">
             <img
               tw="flex items-center justify-center max-w-[258px] h-auto shrink-0 object-contain mt-[17px]"
-              src="public/assets/imgs/common/footer_logo.png"
+              src="/assets/imgs/common/footer_logo.png"
               alt="logo bottom"
             />
           </a>
@@ -81,7 +81,7 @@ const Footer = () => {
             onClick={scrollToTop}
           >
             <img
-              src="public/assets/icons/common/arrow_up.png"
+              src="/assets/icons/common/arrow_up.png"
               alt="arrow up button"
             />
           </button>
@@ -89,27 +89,27 @@ const Footer = () => {
         <div className="footer-social-icons">
           <img
             className="footer-social-icon"
-            src="public/assets/icons/common/facebook_f_white.png"
+            src="/assets/icons/common/facebook_f_white.png"
             alt="facebook"
           />
           <img
             className="footer-social-icon"
-            src="public/assets/icons/common/twitter_white.png"
+            src="/assets/icons/common/twitter_white.png"
             alt="twitter"
           />
           <img
             className="footer-social-icon"
-            src="public/assets/icons/common/linkedin_in_white.png"
+            src="/assets/icons/common/linkedin_in_white.png"
             alt="linkedin"
           />
           <img
             className="footer-social-icon"
-            src="public/assets/icons/common/youtube_white.png"
+            src="/assets/icons/common/youtube_white.png"
             alt="youtube"
           />
           <img
             className="footer-social-icon"
-            src="public/assets/icons/common/instagram_white.png"
+            src="/assets/icons/common/instagram_white.png"
             alt="instagram"
           />
         </div>
