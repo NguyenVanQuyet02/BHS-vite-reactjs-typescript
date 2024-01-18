@@ -8,7 +8,7 @@ import { ITodo, deleteTodo, toggletodo } from '../../../redux-core/todo'
 const ToDoList: React.FC = () => {
   // const todos = useSelector((state: RootState) => state.todos.todos)
 
-  const { todos: res } = useSelector((state: RootState) => state.todos)
+  const { todos: res } = useSelector((state: RootState) => state?.todos)
   const [todos, setTodos] = useState<ITodo[]>([]);
   useEffect(() => {
     setTodos(res);
@@ -17,20 +17,20 @@ const ToDoList: React.FC = () => {
   return (
     <>
       {todos?.length > 0 && (
-        <div tw="w-[60%]  mx-auto flex flex-col gap-y-2">
+        <div tw="w-[60%] h-auto mx-auto flex flex-col gap-y-2">
           {todos.map(todo => (
             <div
               key={todo.id}
-              tw="w-full h-[52px] flex items-center justify-between rounded-[8px] border border-solid border-[#D9DDFE] px-[30px]"
+              tw="w-full min-h-[52px] px-[30px] flex items-center justify-between rounded-[8px] border border-solid border-[#D9DDFE] "
             >
-              <div tw="flex">
+              <div tw="flex w-[90%] h-full py-2">
                 <input
                   onChange={() => dispatch(toggletodo(todo.id))}
                   type="checkbox"
                   defaultChecked={todo.completed}
-                  tw="mr-5 w-5 cursor-pointer"
+                  tw="mr-5 w-5 cursor-pointer shrink-0"
                 />
-                <Description tw="m-0 w-fit">{todo.text}</Description>
+                <Description tw="m-0 w-fit flex-1 text-left">{todo.text}</Description>
               </div>
               <button
                 onClick={() => dispatch(deleteTodo(todo.id))}

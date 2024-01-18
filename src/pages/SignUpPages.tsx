@@ -9,6 +9,8 @@ import { Container, Input } from '../components';
 import tw from 'twin.macro'
 import axios from 'axios';
 import { handleRegister } from '../services/authService';
+import { useDispatch } from 'react-redux';
+import { deleteToken } from '../redux-core/auth';
 
 
 type UserSubmitForm = {
@@ -24,6 +26,7 @@ const validationSchema = Yup.object().shape({
 })
 const SignUpPages = () => {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     const {
         register,
         handleSubmit,
@@ -48,7 +51,7 @@ const SignUpPages = () => {
             toast.success("Register successfully!!!");
             reset();
             setTimeout(() => {
-                navigate('/')
+                navigate('/signin')
             }, 500);
         } catch (error: any) {
             toast.error(error.message)

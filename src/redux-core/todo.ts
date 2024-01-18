@@ -14,7 +14,7 @@ interface ITodoState {
 }
 
 const initialState: ITodoState = {
-    todos: JSON.parse(localStorage.getItem("todos") || "{}")
+    todos: JSON.parse(localStorage.getItem("todos") || "[]")
 }
 
 export const addtodo = (text: string) => ({
@@ -38,30 +38,30 @@ const todoReducer = (state = initialState, action: { type: string; payload: stri
                 text: action.payload,
                 completed: false,
             }
-            localStorage.setItem("todos", JSON.stringify([...state.todos, newTodo]))
+            localStorage.setItem("todos", JSON.stringify([...state?.todos, newTodo]))
             return {
                 todos: [
-                    ...state.todos,
+                    ...state?.todos,
                     newTodo
                 ]
             }
         case TOGGLETODO:
-            const todo = state.todos.find(todo => +todo.id === +action.payload)
+            const todo = state?.todos.find(todo => +todo.id === +action.payload)
             if (todo) {
                 todo.completed = !todo.completed
             }
-            localStorage.setItem("todos", JSON.stringify(state.todos))
-            return { todos: [...state.todos] }
+            localStorage.setItem("todos", JSON.stringify(state?.todos))
+            return { todos: [...state?.todos] }
         case DELETETODO:
-            const indexTodo = state.todos.findIndex(
+            const indexTodo = state?.todos.findIndex(
                 todo => +todo.id === +action.payload,
             )
             if (indexTodo >= 0) {
-                state.todos.splice(indexTodo, 1)
-                localStorage.setItem('todos', JSON.stringify(state.todos))
+                state?.todos.splice(indexTodo, 1)
+                localStorage.setItem('todos', JSON.stringify(state?.todos))
             }
             return {
-                todos: [...state.todos]
+                todos: [...state?.todos]
             }
         default:
             return state

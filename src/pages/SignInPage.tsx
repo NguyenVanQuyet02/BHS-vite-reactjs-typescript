@@ -9,6 +9,8 @@ import { toast } from 'react-toastify'
 import { NavLink, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { handleLogin } from '../services/authService';
+import { useDispatch } from 'react-redux';
+import { deleteToken, saveToken } from '../redux-core/auth';
 
 type UserSubmitForm = {
     email: string
@@ -22,6 +24,7 @@ const validationSchema = Yup.object().shape({
 
 const SignInPage = () => {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     const {
         register,
         handleSubmit,
@@ -43,12 +46,10 @@ const SignInPage = () => {
         const { email, password } = values
         try {
             const res = await handleLogin(email, password)
-            console.log("🚀 ~ onSubmitForm ~ res:", res)
+            dispatch(saveToken(res));
             toast.success("Login successfully!!!");
             reset();
-            setTimeout(() => {
-                navigate('/')
-            }, 500);
+            navigate('/todolist')
 
         } catch (error: any) {
             toast.error("Email or password is incorrect!!!")

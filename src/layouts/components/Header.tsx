@@ -25,31 +25,26 @@ const listMenuHeader = [
   },
   {
     index: 2,
-    href: '/todolist',
-    title: 'Todo list page',
-  },
-  {
-    index: 3,
-    href: 'home2',
+    href: '/home2',
     title: 'Home 2 page',
   },
   {
-    index: 4,
+    index: 3,
     href: '/about',
     title: 'About page',
   },
   {
-    index: 5,
+    index: 4,
     href: '/service',
     title: 'Service page',
   },
   {
-    index: 6,
+    index: 5,
     href: '/signin',
     title: 'Sign in',
   },
   {
-    index: 7,
+    index: 6,
     href: '/signup',
     title: 'Sign up',
   },
@@ -100,7 +95,7 @@ const Header: React.FC<PropsHeader> = ({ theme = 'light' }) => {
           </svg>
         </button>
         <div id="menu" tw="md_max:absolute md_max:hidden w-fit h-full">
-          <nav css={stylesNav}>
+          <nav css={stylesNav} tw='md_max:(w-full h-fit max-h-[640px] overflow-y-auto)'>
             <ul tw="w-fit flex items-center justify-center list-none lg:mr-[51px] md_max:w-full md_max:m-0 md_max:flex-col">
               <li css={[stylesLiHeader, tw`lg:mr-[44px] relative`]}>
                 <NavLink
@@ -150,15 +145,15 @@ const Header: React.FC<PropsHeader> = ({ theme = 'light' }) => {
                             tw`lg:text-left w-full lg:w-[260px] text-secondary hover:bg-[#d9dcf3] hover:text-primary md_max:bg-white`,
                           ]}
                         >
-                          <a
+                          <NavLink
                             css={[
                               stylesLinkHeader,
                               tw`w-full block lg:pl-8 lg:py-4`,
                             ]}
-                            href={item.href}
+                            to={item.href}
                           >
                             {item.title}
-                          </a>
+                          </NavLink>
                         </li>
                       ))}
                     </ul>

@@ -1,8 +1,10 @@
 import { createStore, combineReducers } from 'redux'
 import todoReducer from './todo'
+import authReducer from './auth'
 
 const reducer = combineReducers({
-    todos: todoReducer
+    todos: todoReducer,
+    auth: authReducer
 })
 
 const store = createStore(reducer)

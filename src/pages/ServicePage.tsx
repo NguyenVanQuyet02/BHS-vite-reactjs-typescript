@@ -104,7 +104,7 @@ const ServicePage = () => {
       //   </Button>
       // }
       />
-      <div tw="mb-[2000px]"></div>
+      {/* <div tw="mb-[2000px]"></div> */}
     </Layout>
   )
 }
