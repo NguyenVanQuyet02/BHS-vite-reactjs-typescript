@@ -1,0 +1,5 @@
+export { default as HomeSlider } from './HomeSlider'
+export { default as HomeService } from './HomeService'
+export { default as HomeAbout } from './HomeAbout'
+export { default as HomeTeams } from './HomeTeams'
+export { default as HomeContact } from './HomeContact'

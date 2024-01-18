@@ -1,0 +1,7 @@
+export { default as SignInPage } from './SignInPage'
+export { default as SignUpPages } from './SignUpPages'
+export { default as HomePage1 } from './HomePage1'
+export { default as HomePage2 } from './HomePage2'
+export { default as AboutPage } from './AboutPage'
+export { default as ServicePage } from './ServicePage'
+export { default as ToDoListPage } from './ToDoListPage'

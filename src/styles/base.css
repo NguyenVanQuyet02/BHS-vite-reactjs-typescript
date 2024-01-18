@@ -1,0 +1,70 @@
+:root {
+    --primary-text-color: #091156;
+    --secondary-text-color: #8B8B8B;
+    --white-text-color: #fff;
+    --pink-text-color: #FF64AE;
+    --text-color-D8D: #D8DCFF;
+    --font-size-48: 48px;
+    --font-size-36: 36px;
+    --font-size-24: 24px;
+    --font-size-18: 18px;
+    --font-size-16: 16px;
+    --font-size-14: 14px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    flex-shrink: 0;
+}
+
+body {
+    font-family: Poppins;
+
+}
+
+button {
+    border-color: transparent;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.block-center {
+    display: block;
+    min-width: 20px;
+    min-height: 20px;
+    margin: 0 auto;
+}
+
+.icon-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 100%;
+}
+
+input {
+    border-color: transparent;
+}
+
+textarea {
+    resize: vertical;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+li {
+    width: auto;
+    list-style: none;
+}
+
+a {
+    width: auto;
+    text-decoration: none;
+    cursor: pointer;
+}
