@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { disableScroll, enableScroll } from '../../utils/handleShowMenuHeader'
 import scrollFunction from '../../utils/scrollFunction'
 import { Button, Container, Logo } from '../../components'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import tw, { css } from 'twin.macro'
 // import Test from './assets/test.svg'
 
@@ -161,8 +161,8 @@ const Header: React.FC<PropsHeader> = ({ theme = 'light' }) => {
                 )}
               </li>
               <li css={[stylesLiHeader, tw`lg:mr-[42px]`]}>
-                <a
-                  href="/about"
+                <NavLink
+                  to="/about"
                   css={[
                     stylesLinkHeader,
                     theme === 'dark'
@@ -171,7 +171,7 @@ const Header: React.FC<PropsHeader> = ({ theme = 'light' }) => {
                   ]}
                 >
                   About
-                </a>
+                </NavLink>
               </li>
               <li css={[stylesLiHeader, tw`lg:mr-[45px]`]}>
                 <NavLink
