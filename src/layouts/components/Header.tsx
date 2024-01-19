@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
-import { disableScroll, enableScroll } from '../../utils/handleShowMenuHeader'
-import scrollFunction from '../../utils/scrollFunction'
 import { Button, Container, Logo } from '../../components'
 import { NavLink } from 'react-router-dom'
 import tw, { css } from 'twin.macro'
-// import Test from './assets/test.svg'
 
 import {
   stylesDropdownHomeHeader,
@@ -12,6 +9,7 @@ import {
   stylesLinkHeader,
   stylesNav,
 } from '../../styles/Styles'
+import { disableScroll, enableScroll, scrollFunction } from '../../utils'
 
 type PropsHeader = {
   theme?: 'dark' | 'light' | undefined

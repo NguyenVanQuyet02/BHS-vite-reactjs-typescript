@@ -16,7 +16,7 @@ const todoSlice = createSlice({
   name: 'todos',
   initialState,
   reducers: {
-    addTodo: (state, action) => {
+    addTodo: (state:ITodoState, action: { type: string; payload: string }) => {
       state.todos.push({
         id: Math.floor(Math.random() * 1000) + 1,
         text: action.payload,
@@ -24,14 +24,14 @@ const todoSlice = createSlice({
       })
       localStorage.setItem('todos', JSON.stringify(state.todos))
     },
-    toggleTodo: (state, action) => {
+    toggleTodo: (state:ITodoState, action: { type: string; payload: number }) => {
       const todo = state.todos.find(todo => todo.id === action.payload)
       if (todo) {
         todo.completed = !todo.completed
         localStorage.setItem('todos', JSON.stringify(state.todos))
       }
     },
-    removeTodo: (state, action) => {
+    removeTodo: (state:ITodoState, action: { type: string; payload: number }) => {
       const indexTodo = state.todos.findIndex(
         todo => todo.id === action.payload,
       )
