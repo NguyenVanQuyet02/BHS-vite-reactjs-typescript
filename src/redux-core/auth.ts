@@ -2,7 +2,7 @@ const SAVETOKEN = 'savetoken';
 const DELETETOKEN = 'deletetoken';
 
 
-const token: string = ""
+const token: string = JSON.parse(localStorage.getItem('token') || "[]")
 
 export const saveToken = (token: string) => ({
     type: SAVETOKEN,
@@ -15,9 +15,13 @@ export const deleteToken = () => ({
 const authReducer = (state = token, action: { type: string; payload: string }) => {
     switch (action.type) {
         case SAVETOKEN:
-            return state = action.payload
+            state = action.payload
+            localStorage.setItem('token',JSON.stringify(state))
+            return state;
         case DELETETOKEN:
-            return state = ""
+            state = ""
+            localStorage.setItem('token',JSON.stringify(state))
+            return state;
         default:
             return state
     }
